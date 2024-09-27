@@ -284,13 +284,13 @@ const BookTracker = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <BookSection
-            title="Your Books"
+            title="Facu Books"
             books={userBooks}
             markAsCompleted={(id) => markAsCompleted(id, true)}
             exchangeBook={(id) => exchangeBook(id, true)}
           />
           <BookSection
-            title="Girlfriend's Books"
+            title="Luna's Books"
             books={girlfriendBooks}
             markAsCompleted={(id) => markAsCompleted(id, false)}
             exchangeBook={(id) => exchangeBook(id, false)}
@@ -396,12 +396,12 @@ const BookTracker = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <CompletedBooksSection
-                title="Your Completed Books"
+                title="Facu Completed Books"
                 books={completedBooks.user}
                 count={completedBooks.user.length}
               />
               <CompletedBooksSection
-                title="Girlfriend's Completed Books"
+                title="Luna's Completed Books"
                 books={completedBooks.girlfriend}
                 count={completedBooks.girlfriend.length}
               />
