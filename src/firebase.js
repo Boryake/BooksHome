@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCZFNkY47LtR_ygyDE0NDVWGWtaE2MnDLM",
-    authDomain: "bookshomes2.firebaseapp.com",
-    projectId: "bookshomes2",
-    storageBucket: "bookshomes2.appspot.com",
-    messagingSenderId: "488764628501",
-    appId: "1:488764628501:web:c40e539b43266a1564f81c",
-    measurementId: "G-CWB8VKTHE7"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
   };
 
 // Initialize Firebase
